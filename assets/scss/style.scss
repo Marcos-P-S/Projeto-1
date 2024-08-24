@@ -1,0 +1,79 @@
+
+/* variaveis */
+$main-color: rgba(53, 185, 46, 0.613);
+$secundary-color: #06066a;
+
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+}
+.row{
+    margin: 0;
+}
+.container{
+    padding: 70px 0;
+}
+p, li {
+    color: $secundary-color;
+    font-size: 14px;
+}
+
+/* barra de navegação */
+header section nav {
+  background-color: $main-color;
+  color: $main-color;
+  
+  a {
+    color: $secundary-color;
+  }
+
+  a:hover {
+    color: $secundary-color;
+  }
+
+  #logo {
+    width: 70px;
+    margin-right: 0px;
+   
+    
+    
+  }
+  .Qbela {
+    font-size: 25px;
+    font-style: oblique;
+    font-family: sans-serif;
+ 
+    }
+#navbar-links{
+    a {
+        color: $secundary-color;
+      }
+    
+      a:hover {
+        color: #b75ea4;
+      }
+    
+    }
+    
+  }
+
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-brand{
+    padding: 0;
+    color: $secundary-color;
+    
+    :hover{
+        color: $secundary-color;
+    }
+}
+
+.navbar-exand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+
+}
+

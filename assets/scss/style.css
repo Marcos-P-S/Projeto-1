@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* variaveis */
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 70px 0;
+}
+
+p, li {
+  color: #06066a;
+  font-size: 14px;
+}
+
+/* barra de navegação */
+header section nav {
+  background-color: rgba(53, 185, 46, 0.613);
+  color: rgba(53, 185, 46, 0.613);
+}
+header section nav a {
+  color: #06066a;
+}
+header section nav a:hover {
+  color: #06066a;
+}
+header section nav #logo {
+  width: 70px;
+  margin-right: 0px;
+}
+header section nav .Qbela {
+  font-size: 25px;
+  font-style: oblique;
+  font-family: sans-serif;
+}
+header section nav #navbar-links a {
+  color: #06066a;
+}
+header section nav #navbar-links a:hover {
+  color: #b75ea4;
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+  color: #06066a;
+}
+.navbar-brand :hover {
+  color: #06066a;
+}
+
+.navbar-exand-lg .navbar-nav .nav-link {
+  padding: 1rem 0.8rem;
+}/*# sourceMappingURL=style.css.map */
