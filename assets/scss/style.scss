@@ -1,79 +1,75 @@
-
 /* variaveis */
-$main-color: rgba(53, 185, 46, 0.613);
-$secundary-color: #06066a;
+$main-color: #7C1F4E;
+$secundary-color:#C1C2C2;
+$terciaria-color:#F374AE;
+$quartiaria-colar:#4C8577;
 
 /* Geral */
 * {
   padding: 0;
   margin: 0;
 }
-.row{
-    margin: 0;
+.row {
+  margin: 0;
 }
-.container{
-    padding: 70px 0;
-}
-p, li {
-    color: $secundary-color;
-    font-size: 14px;
+p,
+li {
+  color: $secundary-color;
 }
 
 /* barra de navegação */
-header section nav {
-  background-color: $main-color;
+html body header {
+  background-color: $secundary-color;
   color: $main-color;
+  padding: 0;
   
+
   a {
-    color: $secundary-color;
+    color: $main-color;
   }
 
   a:hover {
-    color: $secundary-color;
-  }
-
-  #logo {
-    width: 70px;
-    margin-right: 0px;
-   
-    
-    
-  }
-  .Qbela {
-    font-size: 25px;
-    font-style: oblique;
-    font-family: sans-serif;
+    color: $terciaria-color;
  
-    }
-#navbar-links{
-    a {
-        color: $secundary-color;
-      }
-    
-      a:hover {
-        color: #b75ea4;
-      }
-    
-    }
-    
   }
-
-
-#nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
+  .navbar-brand{
+    min-width: 50px; 
+    min-height: 50px;
+    img{
+      width:60px ;
+   }
+  }
+  .container .navbar-toggler{
+    outline: none;
+  }
 }
-.navbar-brand{
-    padding: 0;
-    color: $secundary-color;
-    
-    :hover{
-        color: $secundary-color;
+#navbarSite .navbar-nav .active{
+color: #2e0c1d;
+}
+.dropdown-menu {
+  background-color: $secundary-color;
+  
+  .dropdown-item{
+    color: $main-color;
+  }
+  .dropdown-item:hover{
+    background-color: $secundary-color;
+    color: $terciaria-color;
+  }
+}
+
+
+/* Garantir que o carrossel tenha altura consistente */
+.carousel-inner img {
+height: 400px; /* Ajuste conforme necessário */
+object-fit: cover; /* Cobre o espaço mantendo a proporção */
+}
+@media (max-width:991px){
+  html body header {
+    .navbar-brand{
+      img{
+        width:85px ;
+      }
     }
+  }
 }
-
-.navbar-exand-lg .navbar-nav .nav-link{
-    padding: 1rem .8rem;
-
-}
-

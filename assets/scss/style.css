@@ -10,55 +10,58 @@
   margin: 0;
 }
 
-.container {
-  padding: 70px 0;
-}
-
-p, li {
-  color: #06066a;
-  font-size: 14px;
+p,
+li {
+  color: #C1C2C2;
 }
 
 /* barra de navegação */
-header section nav {
-  background-color: rgba(53, 185, 46, 0.613);
-  color: rgba(53, 185, 46, 0.613);
-}
-header section nav a {
-  color: #06066a;
-}
-header section nav a:hover {
-  color: #06066a;
-}
-header section nav #logo {
-  width: 70px;
-  margin-right: 0px;
-}
-header section nav .Qbela {
-  font-size: 25px;
-  font-style: oblique;
-  font-family: sans-serif;
-}
-header section nav #navbar-links a {
-  color: #06066a;
-}
-header section nav #navbar-links a:hover {
-  color: #b75ea4;
-}
-
-#nav-container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.navbar-brand {
+html body header {
+  background-color: #C1C2C2;
+  color: #7C1F4E;
   padding: 0;
-  color: #06066a;
 }
-.navbar-brand :hover {
-  color: #06066a;
+html body header a {
+  color: #7C1F4E;
+}
+html body header a:hover {
+  color: #F374AE;
+}
+html body header .navbar-brand {
+  min-width: 50px;
+  min-height: 50px;
+}
+html body header .navbar-brand img {
+  width: 60px;
+}
+html body header .container .navbar-toggler {
+  outline: none;
 }
 
-.navbar-exand-lg .navbar-nav .nav-link {
-  padding: 1rem 0.8rem;
+#navbarSite .navbar-nav .active {
+  color: #2e0c1d;
+}
+
+.dropdown-menu {
+  background-color: #C1C2C2;
+}
+.dropdown-menu .dropdown-item {
+  color: #7C1F4E;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #C1C2C2;
+  color: #F374AE;
+}
+
+/* Garantir que o carrossel tenha altura consistente */
+.carousel-inner img {
+  height: 400px; /* Ajuste conforme necessário */
+  -o-object-fit: cover;
+     object-fit: cover; /* Cobre o espaço mantendo a proporção */
+}
+
+@media (max-width: 991px) {
+  html body header .navbar-brand img {
+    width: 85px;
+  }
 }/*# sourceMappingURL=style.css.map */
