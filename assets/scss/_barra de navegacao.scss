@@ -1,0 +1,75 @@
+/* Geral */
+html {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin-top: 70px;
+  }
+  .row {
+    margin: 0;
+  }
+  p,
+  li {
+    color: $secundary-color;
+  }
+}
+/* barra de navegação */
+html {
+  body header {
+    background-color: $secundary-color;
+    color: $main-color;
+    opacity: 0.95;
+
+    .nav-link {
+      color: $main-color;
+      text-align: center;
+    }
+
+    .nav-link:hover {
+      color: $terciaria-color;
+    }
+    .navbar-brand {
+      min-width: 50px;
+      min-height: 50px;
+      transform: translateX(-30%);
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .container .navbar-toggler {
+    outline: none;
+  }
+
+  #navbarSite .navbar-nav .active {
+    color: #2e0c1d;
+  }
+}
+/* Redes sociais */
+html {
+  .dropdown-menu {
+    background-color: $secundary-color;
+    min-width: 5rem;
+
+    .dropdown-item {
+      color: $main-color;
+
+      font-size: 0.8rem;
+
+      .nav-link:hover {
+        background-color: $secundary-color-2;
+      }
+    }
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      background-color: $secundary-color-2;
+    }
+  }
+  .dropdown-menu.show {
+    display: flex;
+  }
+}
+

@@ -1,0 +1,27 @@
+/* Area responsiva */
+@media (max-width: 991px) {
+    html body {
+      margin-top: 86px;
+    }
+  
+    html body header {
+      .navbar-brand {
+        img {
+          width: 85px;
+        }
+      }
+    }
+    #navbarSite .navbar-nav .active {
+      color: #2e0c1d;
+      background-color: $secundary-color-2;
+    }
+    .nav-link:hover {
+      color: $terciaria-color;
+      background-color: $secundary-color-2;
+    }
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      background-color: $secundary-color-2;
+      color: $terciaria-color;
+    }
+  }

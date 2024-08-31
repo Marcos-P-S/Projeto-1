@@ -1,17 +1,17 @@
 @charset "UTF-8";
-/* variaveis */
 /* Geral */
-* {
+html * {
   padding: 0;
   margin: 0;
 }
-
-.row {
+html body {
+  margin-top: 70px;
+}
+html .row {
   margin: 0;
 }
-
-p,
-li {
+html p,
+html li {
   color: #C1C2C2;
 }
 
@@ -19,49 +19,76 @@ li {
 html body header {
   background-color: #C1C2C2;
   color: #7C1F4E;
-  padding: 0;
+  opacity: 0.95;
 }
-html body header a {
+html body header .nav-link {
   color: #7C1F4E;
+  text-align: center;
 }
-html body header a:hover {
+html body header .nav-link:hover {
   color: #F374AE;
 }
 html body header .navbar-brand {
   min-width: 50px;
   min-height: 50px;
+  transform: translateX(-30%);
 }
 html body header .navbar-brand img {
   width: 60px;
 }
-html body header .container .navbar-toggler {
+html .container .navbar-toggler {
   outline: none;
 }
-
-#navbarSite .navbar-nav .active {
+html #navbarSite .navbar-nav .active {
   color: #2e0c1d;
 }
 
-.dropdown-menu {
+/* Redes sociais */
+html .dropdown-menu {
   background-color: #C1C2C2;
+  min-width: 5rem;
 }
-.dropdown-menu .dropdown-item {
+html .dropdown-menu .dropdown-item {
   color: #7C1F4E;
+  font-size: 0.8rem;
 }
-.dropdown-menu .dropdown-item:hover {
-  background-color: #C1C2C2;
-  color: #F374AE;
+html .dropdown-menu .dropdown-item .nav-link:hover {
+  background-color: #b3b1b1;
+}
+html .dropdown-menu .dropdown-item:hover,
+html .dropdown-menu .dropdown-item:focus {
+  background-color: #b3b1b1;
+}
+html .dropdown-menu.show {
+  display: flex;
 }
 
-/* Garantir que o carrossel tenha altura consistente */
-.carousel-inner img {
-  height: 400px; /* Ajuste conforme necessário */
+/* Carrossel */
+html .carousel-inner img {
+  height: 400px;
   -o-object-fit: cover;
-     object-fit: cover; /* Cobre o espaço mantendo a proporção */
+     object-fit: cover;
 }
 
+/* Area responsiva */
 @media (max-width: 991px) {
+  html body {
+    margin-top: 86px;
+  }
   html body header .navbar-brand img {
     width: 85px;
+  }
+  #navbarSite .navbar-nav .active {
+    color: #2e0c1d;
+    background-color: #b3b1b1;
+  }
+  .nav-link:hover {
+    color: #F374AE;
+    background-color: #b3b1b1;
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #b3b1b1;
+    color: #F374AE;
   }
 }/*# sourceMappingURL=style.css.map */
